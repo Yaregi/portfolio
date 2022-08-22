@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <title>-동아제약-</title>
+</head>
+
+<body>
+    <div id="swap">
+        <header id="header">
+            <div class="headerin">
+                <h1 class="logo"><a href="#"><img src="img/logo2.png"></a></h1>
+                <ul class="ul1 clear">
+                    <li><a href="#">동아제약</a>
+                        <ul class="ul1_sub1">
+                            <li><a href="#">회사소개</a></li>
+                            <li><a href="#">CEO 인삿말</a></li>
+                            <li><a href="#">연혁</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">제품소개</a>
+                        <ul class="ul1_sub2">
+                            <li><a href="#">일반의약품</a></li>
+                            <li><a href="#">의약외품</a></li>
+                            <li><a href="#">건강기능식품</a></li>
+                            <li><a href="#">생활건강/화장품</a></li>
+                            <li><a href="#">기타</a></li>
+                        </ul>
+                    </li>
+                </ul> <!-- ul1 -->
+                <ul class="ul2 clear">
+                    <li><a href="#">홍보센터</a>
+                        <ul class="ul2_sub1">
+                            <li><a href="#">영상광고</a></li>
+                            <li><a href="#">라디오광고</a></li>
+                            <li><a href="#">PR동영상</a></li>
+                            <li><a href="#">광고갤러리</a></li>
+                            <li><a href="#">보도자료</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">고객센터</a>
+                        <ul class="ul2_sub2">
+                            <li><a href="#">오시는 길</a></li>
+                            <li><a href="#">온라인 상담</a></li>
+                            <li><a href="#">제품문의</a></li>
+                        </ul>
+                    </li>
+                </ul> <!-- ul2 -->
+                <ul class="ul3 clear">
+                    <li><a href="#">KO</a><span>|</span></li>
+                    <li><a href="#">EN</a></li>
+                    <li class="sub_gnb"><a href="#">SHOPING</a></li>
+                    <li class="gnb_search"><a href="#"><img src="img/search_icon.png"></a>
+                        <input type="searchtxt" id="txt" name="txt" placeholder="검색 내용을 입력하세요">
+                    </li>
+                    <li class="gnb_cart"><a href="#"><img src="img/cart_icon.png"></a></li>
+
+                </ul><!-- sub_gnb -->
+            </div> <!-- headerin -->
+        </header> <!-- header -->
+        <section id="mainSlider">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="bg1">
+                            <div class="bacchustxt"><img src="img/BACCHUS.png"></div>
+                            <div class="bacchusimg1"><a href="#"><img src="img/drink1-1.png"></a></div>
+                            <div class="bacchustxt1"><img src="img/txt.png"></div>
+                            <ul class="clear">
+                                <li><a href="#" class="on">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                            </ul>
+                            <div class="left-bar"><a href="#"><img src="img/left_bar.png"></a></div>
+
+                            <div class="scrolldown">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                        </div> <!-- bg1 -->
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="bg2">
+                            <div class="bacchustxt"><img src="img/BACCHUSw.png"></div>
+                            <div class="bacchusimg2"><a href="#"><img src="img/drink3.png"></a></div>
+                            <div class="bacchustxt1"><img src="img/txtw.png"></div>
+                            <ul class="clear">
+                                <li><a href="#">1</a></li>
+                                <li><a href="#" class="on">2</a></li>
+                                <li><a href="#">3</a></li>
+                            </ul>
+                            <div class="left-bar"><a href="#"><img src="img/left_bar2.png"></a></div>
+
+                            <div class="scrolldown">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div> <!-- bg2 -->
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="bg3">
+                            <div class="bacchustxt"><img src="img/BACCHUS.png"></div>
+                            <div class="bacchusimg3"><a href="#"><img src="img/drink2.png"></a></div>
+                            <div class="bacchustxt1"><img src="img/txt.png"></div>
+                            <ul class="clear">
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#" class="on">3</a></li>
+                            </ul>
+                            <div class="left-bar"><a href="#"><img src="img/left_bar3.png"></a></div>
+
+                            <div class="scrolldown">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div> <!-- swiper-wrapper -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+
+                <!-- <div class="swiper-scrollbar"></div> -->
+            </div> <!-- swiper -->
+        </section> <!-- mainSlider -->
+
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+
+                autoplay: {
+                    delay: 5000,
+                },
+
+                loop: true,
+
+                speed: 1500,
+
+
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+
+
+                navigation: {
+
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+
+
+                scrollbar: {
+                    el: '.swiper-scrollbar',
+                },
+            });
+        </script>
+
+        <section id="container">
+            <div class="cont1">
+                <ul class="clear">
+                    <li class="one"><a href="#"><img src="img/cont1_img1.jpg"></a>
+                        <div><a href="#"></a></div>
+                        <div class="imgbtn1"><a href="#">제품상세보기</a></div>
+                        <div class="imgbtn2"><a href="#">구매하기</a></div>
+                    </li>
+                    <li class="two"><a href="#"><img src="img/cont1_img2.jpg"></a>
+                        <div><a href="#"></a></div>
+                        <div class="imgbtn1"><a href="#">제품상세보기</a></div>
+                        <div class="imgbtn2"><a href="#">구매하기</a></div>
+                    </li>
+                    <li class="three"><a href="#"><img src="img/cont1_img3.jpg"></a>
+                        <div><a href="#"></a></div>
+                        <div class="imgbtn1"><a href="#">제품상세보기</a></div>
+                        <div class="imgbtn2"><a href="#">구매하기</a></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="cont2 clear">
+                <h3 class="cont2_logo clear"><a href="#">홍보센터</a></h3>
+                <div class="left_cont2 clear">
+                    <div class="font1">
+                        <h4>광고영상</h4>
+                        <p>오늘의 활력이 되어 줄 나의 천사!</p>
+                        <p class="sub"><a href="#">#다른영상보기</a></p>
+                    </div>
+                    <div class="video1">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/9431MlsYeg0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <!--  <div class="video2">1</div>
+            <div class="video3">1</div> -->
+                    <div class="left-arrow"><a href="#"><img src="img/btn_main_left.png"></a></div>
+                    <div class="right-arrow"><a href="#"><img src="img/btn_main_right.png"></a></div>
+                </div>
+                <div class="right_cont2">
+                    <div class="font2">
+                        <h4>새소식</h4>
+                        <p>최근 소식과 동향을 알려드립니다.</p>
+                        <p class="sub2"><a href="#">#다른소식보기</a></p>
+                    </div>
+                    <ul class="clear">
+
+                        <li>
+                            <div class="screen">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <a href="#">
+                                    <div class="cont2_img1">
+                                        <p>동아 인사이드</p>
+                                    </div>
+
+                                    <p>관리하는 남자의 필수 아이템,'필리더스'</p>
+                                    <p>BM 김익현 책임 인터뷰</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="screen">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <a href="#">
+                                    <div class="cont2_img2">
+                                        <p>프레스센터</p>
+                                    </div>
+
+                                    <p>동아제약, 영국 프리미엄 프로바이오틱스</p>
+                                    <p>'프로븐(PROVEN)' 7종 면세점 론칭</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="screen">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <a href="#">
+                                    <div class="cont2_img3">
+                                        <p>프레스센터</p>
+                                    </div>
+
+                                    <p>동아ST,'제 17회 청소년 환경사랑 생명사랑</p>
+                                    <p>교실' 참가자 모집</p>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <footer id="footer">
+            <div class="footerin clear">
+                <div class="footer1">
+
+                    <ul class="ul3 clear">
+                        <li>
+                            <div class="footerlogo"></div>
+                        </li>
+                        <li>
+                            <h2>회사소개</h2>
+                            <ul>
+                                <li><a href="#">CEO인삿말</a></li>
+                                <li><a href="#">연혁</a></li>
+                                <li><a href="#">오시는 길</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h2>고객센터</h2>
+                            <ul>
+                                <li><a href="#">온라인 상담</a></li>
+                                <li><a href="#">제품 문의</a></li>
+                                <li><a href="#">보도자료</a></li>
+                                <li><a href="#">기타</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div> <!-- footer1 -->
+                <div class="footer2 clear">
+                    <div class="footerin2">
+                        <input type="footer_search" id="txt" name="txt" placeholder="검색 내용을 입력하세요">
+                        <h3>Follow US</h3>
+                        <p>새로운 뉴스소식을 들을 수 있습니다.</p>
+                        <ul class="clear">
+                            <li><a href="#"><img src="img/facebook.png"></a></li>
+                            <li><a href="#"><img src="img/instagram.png"></a></li>
+                            <li><a href="#"><img src="img/twitter.png"></a></li>
+                            <li><a href="#"><img src="img/blog.png"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> <!-- footerin -->
+        </footer> <!-- footer -->
+    </div> <!-- swap -->
+</body>
+
+</html>

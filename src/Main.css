@@ -1,0 +1,1220 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+
+div#pcWallpaper {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #000;
+}
+
+
+
+div#pcWallpaper>#intro {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: block;
+    position: fixed;
+    animation: bg;
+    animation-duration: 5s;
+    animation-delay: .5s;
+    animation-fill-mode: both;
+    visibility: hidden;
+    z-index: 100;
+}
+
+@keyframes bg {
+    0% {
+        visibility: visible;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+div#pcWallpaper>#intro>.tit {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.5vw;
+    overflow: hidden;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1), #fff, rgba(0, 0, 0, 1));
+    background-repeat: no-repeat;
+    background-size: 80%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: tit 6s linear infinite;
+    transition: all 0.5s;
+    color: #fff;
+
+}
+
+@keyframes tit {
+    0% {
+        opacity: 0;
+        background-position: -500%;
+    }
+
+    50% {
+        opacity: 1;
+        background-position: 500%;
+    }
+
+    100% {
+        opacity: 0;
+        background-position: 500%;
+    }
+
+}
+
+.util {
+    position: fixed;
+    color: #fff;
+    -webkit-background-clip: text;
+    mix-blend-mode: difference;
+    top: 56px;
+    right: 7vw;
+    font-size: .7vw;
+    text-align: right;
+    animation: util 6s;
+    z-index: 150;
+    transform: scale(1, .9);
+    /*  transition: all 0.2s; */
+}
+
+@keyframes util {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.util li {
+    margin-top: 15px;
+}
+
+.util a {
+    font-family: 'S-CoreDream-3Light';
+    font-weight: bold;
+    mix-blend-mode: difference;
+    /*  background-color: #fff; */
+}
+
+
+div#pcWallpaper>.page1 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    color: #000;
+}
+
+div#pcWallpaper>.page1>.title {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 7;
+    animation: title 6s;
+
+}
+
+@keyframes title {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+div#pcWallpaper>.page1>.title p {
+    font-size: .9vw;
+    margin: 10px auto 0 auto;
+    text-align: center;
+    color: #ffffff;
+    background: rgba(255, 255, 255, .8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: #fff 0 0 5px;
+    /*  font-weight: bold; */
+    display: block;
+    position: relative;
+    z-index: 3;
+}
+
+@keyframes move-twink-back {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -10000px 5000px;
+    }
+}
+
+div#pcWallpaper>.page1>.title-box {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 7;
+    color: #bbb;
+    animation: title-box 6s;
+}
+
+@keyframes title-box {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+div#pcWallpaper>.page1>.title-box h1 {
+    font-family: 'S-CoreDream-9Black';
+    letter-spacing: 15px;
+    font-size: .85vw;
+}
+
+div#pcWallpaper>.page1>video {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    animation: video 6s;
+    z-index: 5;
+}
+
+
+
+@keyframes video {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+div#pcWallpaper>.page1>.text-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6.97vw;
+    mix-blend-mode: multiply;
+    z-index: 5;
+
+
+}
+
+div#pcWallpaper>.page1>.text-box h1 {
+    font-family: 'S-CoreDream-6Bold';
+    letter-spacing: 25px;
+
+}
+
+div#pcWallpaper>.page1>.scrolldown {
+    animation: sc 3s;
+}
+
+@keyframes sc {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+div#pcWallpaper>.page1>.scrolldown>span {
+    width: 1vw;
+    height: 1vw;
+    border-bottom: 3px solid #fff;
+    border-left: 3px solid #fff;
+    transform: rotate(-45deg) translateX(-50%);
+    position: absolute;
+    bottom: 2vw;
+    left: 50%;
+    z-index: 7;
+    animation: arrow 1.7s linear infinite;
+    opacity: 0;
+    border-radius: 1px;
+
+}
+
+div#pcWallpaper>.page1>.scrolldown>span:nth-child(1) {
+    transform: rotate(-45deg) translate(0, -50%);
+
+}
+
+
+@keyframes arrow {
+    0% {
+        bottom: 2.5vw;
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+        bottom: 2vw;
+    }
+
+    65% {
+        opacity: 1;
+        bottom: 2vw;
+    }
+
+    100% {
+        opacity: 0;
+        bottom: 2vw;
+    }
+}
+
+div#pcWallpaper>.page2 {
+    width: 100%;
+    height: 980px;
+    position: relative;
+    background-color: #fff;
+    color: #000;
+    z-index: 10;
+}
+
+div#pcWallpaper>.page2 .bg {
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, .6), rgba(0, 0, 0, 0));
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+div#pcWallpaper>.page2>.son {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div#pcWallpaper>.page2>.son text {
+    font-size: 1.2vw;
+    animation: stroke 2.5s linear;
+    animation-fill-mode: forwards;
+    fill: transparent;
+    stroke-dashoffset: 750;
+    stroke-dasharray: 750;
+    stroke: #000;
+    display: none;
+}
+
+div#pcWallpaper>.page2>.son text:nth-child(1) {
+    animation-delay: .05s;
+}
+
+div#pcWallpaper>.page2>.son text:nth-child(2) {
+    animation-delay: .1s;
+}
+
+div#pcWallpaper>.page2>.son text:nth-child(3) {
+    animation-delay: .15s;
+}
+
+div#pcWallpaper>.page2>.son text:nth-child(4) {
+    animation-delay: .2s;
+}
+
+div#pcWallpaper>.page2>.son text:nth-child(5) {
+    animation-delay: .25s;
+}
+
+div#pcWallpaper>.page2>.son text:nth-child(6) {
+    animation-delay: .3s;
+}
+
+div#pcWallpaper>.page2>.son text:nth-child(7) {
+    animation-delay: .35s;
+}
+
+div#pcWallpaper>.page2>.son text:nth-child(8) {
+    animation-delay: .4s;
+}
+
+div#pcWallpaper>.page2>.son text:nth-child(8) {
+    animation-delay: .45s;
+}
+
+div#pcWallpaper>.page2>.son text:nth-child(9) {
+    animation-delay: .5s;
+}
+
+div#pcWallpaper>.page2>.son text:nth-child(10) {
+    animation-delay: .55s;
+}
+
+div#pcWallpaper>.page2>.son text:nth-child(11) {
+    animation-delay: .6s;
+}
+
+div#pcWallpaper>.page2>.son text:nth-child(12) {
+    animation-delay: .65s;
+}
+
+div#pcWallpaper>.page2>.son text:nth-child(13) {
+    animation-delay: .7s;
+}
+
+@keyframes stroke {
+    0% {
+        stroke-dashoffset: 750;
+    }
+
+    70% {
+        fill: #000;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+        fill: #000;
+    }
+}
+
+
+div#pcWallpaper>.page3 {
+    width: 100%;
+    height: 3500px;
+    position: relative;
+    color: #000;
+    z-index: 20;
+}
+
+
+div#pcWallpaper>.page3 .bg {
+    width: 100%;
+    height: 2400px;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .6), rgba(0, 0, 0, 1));
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+div#pcWallpaper>.page3 .bg>.tits {
+    margin-top: 10%;
+}
+
+div#pcWallpaper>.page3 .bg>.tits>h1 {
+    text-align: center;
+    font-size: 2vw;
+    margin-top: 1.5%;
+
+}
+
+div#pcWallpaper>.page3 .tits>h1 {
+    color: #fff;
+
+}
+
+div#pcWallpaper>.page3 .about {
+    margin-top: 40%;
+    color: #fff;
+}
+
+div#pcWallpaper>.page3 .about>h1 {
+    text-align: center;
+    font-size: 3vw;
+    margin-bottom: 10%;
+    font-family: 'S-CoreDream-9Black';
+    letter-spacing: 10px;
+}
+
+div#pcWallpaper>.page3 .about>.this {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+div#pcWallpaper>.page3 .about .me {
+    width: 25%;
+}
+
+div#pcWallpaper>.page3 .about .me .photo {
+    width: 40%;
+    margin: 0 auto;
+}
+
+div#pcWallpaper>.page3 .about .me .photo img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+div#pcWallpaper>.page3 .about .s {
+    text-align: center;
+}
+
+div#pcWallpaper>.page3 .about .s p {
+    margin-top: 3.5%;
+    font-size: 16px;
+}
+
+div#pcWallpaper>.page3 .about .z {
+    text-align: center;
+}
+
+div#pcWallpaper>.page3 .about .z p:nth-child(1) {
+    margin-top: 10%;
+}
+
+div#pcWallpaper>.page3 .about .z p {
+    margin-top: 4%;
+    font-size: 16px;
+}
+
+div#pcWallpaper>.page3 .about .skill {
+    width: 40%;
+}
+
+div#pcWallpaper>.page3 .about .skill ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+div#pcWallpaper>.page3 .about .skill ul li {
+    width: 45%;
+    border-top: 1px solid #fff;
+}
+
+div#pcWallpaper>.page3 .about .skill ul li:nth-child(3) {
+    margin-top: 5%;
+}
+
+div#pcWallpaper>.page3 .about .skill ul li:nth-child(4) {
+    margin-top: 5%;
+}
+
+div#pcWallpaper>.page3 .about .skill ul li h1 {
+    font-family: 'S-CoreDream-2ExtraLight';
+    font-size: 72px;
+    font-weight: normal;
+
+}
+
+div#pcWallpaper>.page3 .about .skill ul li h2 {
+    letter-spacing: 2.5px;
+    font-size: 20px;
+    margin-bottom: 5%;
+}
+
+div#pcWallpaper>.page3 .about .skill ul li:nth-child(3) h2 {
+    font-size: 19px;
+}
+
+div#pcWallpaper>.page3 .about .skill ul li:nth-child(4) h2 {
+    font-size: 17px;
+}
+
+div#pcWallpaper>.page3 .about .skill ul li p {
+    letter-spacing: .5px;
+    line-height: 23px;
+    font-size: 15px;
+}
+
+
+
+
+
+/* ************************page3************************** */
+
+
+div#pcWallpaper>.page4 {
+    width: 100%;
+    height: 113vw;
+    position: relative;
+    z-index: 30;
+    background-color: #fff;
+    /*   overflow: hidden; */
+
+}
+
+
+div#pcWallpaper>.page4 .txt p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #000;
+    width: 50%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding-left: 7vw;
+    z-index: 10;
+    font-family: 'S-CoreDream-2ExtraLight';
+    font-size: 1.7vw;
+    letter-spacing: 4px;
+    padding-top: 3vw;
+    transform: scale(1, .8);
+}
+
+div#pcWallpaper>.page4 .txt p.fix {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
+
+div#pcWallpaper>.page4 .tit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #000;
+    width: 50%;
+    height: 100vh;
+    background-color: #fff;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+    padding-left: 7vw;
+    z-index: 1;
+
+}
+
+div#pcWallpaper>.page4 .tbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+div#pcWallpaper>.page4 .tbox.fix {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+div#pcWallpaper>.page4 .tit h1 {
+    font-family: 'S-CoreDream-8Heavy';
+    font-size: 3.2vw;
+    letter-spacing: 3px;
+    position: relative;
+    transition: all 0.5s;
+}
+
+div#pcWallpaper>.page4 .tit h1::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 8%;
+    left: .5%;
+    top: 0;
+    height: 2px;
+    border-top: 4px solid #2f4c87;
+}
+
+div#pcWallpaper>.page4 .tit h2 {
+    font-size: .92vw;
+    font-family: 'S-CoreDream-3Light';
+    font-weight: normal;
+    transform: scale(1, .85);
+    color: #060606;
+    letter-spacing: 1.5px;
+    margin-bottom: 1%;
+}
+
+div#pcWallpaper>.page4 .tit p {
+    font-size: .7vw;
+    font-family: 'S-CoreDream-3Light';
+    letter-spacing: 1px;
+    color: #7d7d7d;
+    margin-bottom: 2%;
+}
+
+div#pcWallpaper>.page4 .tit a {
+    display: block;
+    border: 1px solid #000;
+    width: 8vw;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: .75vw;
+    position: relative;
+    transition: all .5s;
+    transition-delay: .2s;
+    overflow: hidden;
+}
+
+div#pcWallpaper>.page4 .tit a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -55%;
+    background-color: #fff;
+    width: 50%;
+    height: 100%;
+    transform: skew(-20deg);
+    transition: all 0.5s;
+
+
+}
+
+div#pcWallpaper>.page4 .tit a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -110%;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s;
+    z-index: -1;
+}
+
+div#pcWallpaper>.page4 .tit a:hover {
+    color: #fff;
+}
+
+div#pcWallpaper>.page4 .tit a:hover::after {
+    left: 110%;
+}
+
+div#pcWallpaper>.page4 .tit a:hover::before {
+    left: 0;
+}
+
+
+div#pcWallpaper>.page4 .tit ul {
+    display: flex;
+}
+
+div#pcWallpaper>.page4 .tit ul li:nth-child(1) {
+    margin-right: 1vw;
+}
+
+div#pcWallpaper>.page4 .tit ul li:nth-child(2) {
+    display: none;
+}
+
+div#pcWallpaper .page4 .bg {
+    width: 50%;
+    position: absolute;
+    right: 0;
+    z-index: 0;
+    overflow: hidden;
+    /*    z-index: 100; */
+
+}
+
+div#pcWallpaper .page4 .bg img {
+    width: 100%;
+    transform: scale(1.03);
+    transition: all 0.5s;
+}
+
+div#pcWallpaper .page4 .bgbox {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+}
+
+div#pcWallpaper .page4 .bgbox:nth-child(1) img {
+    width: 100%;
+    transition: all 0.5s;
+}
+
+div#pcWallpaper .page4 .bgbox:nth-child(2) img {
+    width: 100%;
+    transition: all 0.5s;
+}
+
+div#pcWallpaper .page4 .bgbox:nth-child(1) {
+    position: relative;
+}
+
+div#pcWallpaper .page4 .bgbox:nth-child(1) a {
+    transition: all .5s;
+}
+
+div#pcWallpaper .page4 .bgbox:nth-child(1) span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(img/img1c.png) no-repeat center center / 100% auto;
+    display: block;
+    transform: scale(1.03);
+    z-index: -1;
+}
+
+div#pcWallpaper .page4 .bgbox:nth-child(2) {
+    position: relative;
+}
+
+div#pcWallpaper .page4 .bgbox:nth-child(2) a {
+    transition: all .5s;
+}
+
+div#pcWallpaper .page4 .bgbox:nth-child(2) span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(img/img2c.png) no-repeat center center / 100% auto;
+    display: block;
+    transform: scale(1.03);
+    z-index: -1;
+}
+
+
+div#pcWallpaper .page4 .bgbox:nth-child(3) {
+    position: relative;
+}
+
+div#pcWallpaper .page4 .bgbox:nth-child(3) a {
+    transition: all .5s;
+}
+
+div#pcWallpaper .page4 .bgbox:nth-child(3) span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(img/img3c.png) no-repeat center center / 100% auto;
+    display: block;
+    transform: scale(1.03);
+    z-index: -1;
+}
+
+div#pcWallpaper .page4 .bg img:hover {
+    transform: scale(1.2);
+}
+
+
+div#pcWallpaper>.page5 {
+    width: 100%;
+    /* height: 100vh; */
+    position: relative;
+    background-color: #000;
+    z-index: 80;
+    color: #fff;
+}
+
+div#pcWallpaper>.page5>.tit>span {
+    width: 5px;
+    height: 5px;
+    display: block;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 auto .4% auto;
+}
+
+div#pcWallpaper>.page5>.tit {
+    text-align: center;
+    padding-top: 2%;
+    transform: translateX(-150%);
+}
+
+div#pcWallpaper>.page5>.tit h1 {
+    font-size: 1.3vw;
+    margin-bottom: 2%;
+}
+
+div#pcWallpaper>.page5>.tit h2 {
+    font-size: .8vw;
+}
+
+div#pcWallpaper>.page5>.tit p {
+    font-size: .8vw;
+}
+
+div#pcWallpaper>.page5>.tit a {
+    display: block;
+    width: 8%;
+    font-size: .7vw;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #fff;
+    margin: 2% auto 0 auto;
+    position: relative;
+    transition: all .5s;
+    transition-delay: .2s;
+}
+
+div#pcWallpaper>.page5>.tit a:hover {
+    color: #000;
+}
+
+div#pcWallpaper>.page5>.tit a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    transition: all 0.5s;
+    width: 0;
+    height: 100%;
+}
+
+div#pcWallpaper>.page5>.tit a:hover::after {
+    width: 100%;
+    z-index: -1;
+}
+
+div#pcWallpaper>.page5>.img {
+    width: 60%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-top: 3%;
+    padding-bottom: 20%;
+
+}
+
+div#pcWallpaper>.page6 {
+    width: 100%;
+    position: relative;
+    z-index: 80;
+    background-color: #fff;
+
+}
+
+div#pcWallpaper>.page6>.bookimg {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+div#pcWallpaper>.page6>.bookimg img {
+    width: 100%;
+    transform: scale(1.01);
+}
+
+
+div#pcWallpaper>.page6 .tbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+div#pcWallpaper>.page6 .tbox.fix {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+div#pcWallpaper>.page6 .txt p {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    color: #000;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding-left: 7vw;
+    z-index: 10;
+    font-family: 'S-CoreDream-2ExtraLight';
+    font-size: 1.5vw;
+    letter-spacing: 4px;
+    padding-top: 3vw;
+    transform: scale(1, .8);
+}
+
+div#pcWallpaper>.page6 .tit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #000;
+    width: 50%;
+    height: 100vh;
+    background-color: #fff;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+    padding-left: 7vw;
+    z-index: 1;
+
+}
+
+div#pcWallpaper>.page6 .tit h1 {
+    font-family: 'S-CoreDream-8Heavy';
+    font-size: 3.2vw;
+    letter-spacing: 3px;
+    position: relative;
+    transition: all 0.5s;
+}
+
+div#pcWallpaper>.page6 .tit h1::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 8%;
+    left: 0;
+    top: 0;
+    height: 2px;
+    border-top: 4px solid #2f4c87;
+}
+
+div#pcWallpaper>.page6 .tit h2 {
+    font-size: .92vw;
+    font-family: 'S-CoreDream-3Light';
+    font-weight: normal;
+    transform: scale(1, .85);
+    color: #060606;
+    letter-spacing: 1.5px;
+    margin-bottom: 1%;
+}
+
+div#pcWallpaper>.page6 .tit p {
+    font-size: .7vw;
+    font-family: 'S-CoreDream-3Light';
+    letter-spacing: 1px;
+    color: #7d7d7d;
+    margin-bottom: 2%;
+}
+
+div#pcWallpaper>.page6 .tit a {
+    display: block;
+    border: 1px solid #000;
+    width: 8vw;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: .75vw;
+    position: relative;
+    overflow: hidden;
+    transition: all .5s;
+    transition-delay: .2s;
+}
+
+div#pcWallpaper>.page6 .tit a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -55%;
+    background-color: #fff;
+    width: 50%;
+    height: 100%;
+    transform: skew(-20deg);
+    transition: all 0.5s;
+
+
+}
+
+div#pcWallpaper>.page6 .tit a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s;
+    z-index: -1;
+}
+
+div#pcWallpaper>.page6 .tit a:hover {
+    color: #fff;
+}
+
+div#pcWallpaper>.page6 .tit a:hover::after {
+    left: 110%;
+}
+
+div#pcWallpaper>.page6 .tit a:hover::before {
+    left: 0;
+}
+
+
+div#pcWallpaper>.bbg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.678);
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    display: none;
+}
+
+
+div#pcWallpaper>.dl {
+    position: fixed;
+    width: 10vw;
+    height: 3vw;
+    background-color: #fff;
+    top: 10vw;
+    left: 0;
+    z-index: 10000;
+    display: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+    line-height: 3vw;
+}
+
+div#pcWallpaper>.dl a {
+    width: 10vw;
+    height: 3vw;
+    display: block;
+}
+
+div#pcWallpaper>.bbgtit {
+    position: fixed;
+    z-index: 10000;
+    width: 75%;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow-y: scroll;
+    display: none;
+}
+
+div#pcWallpaper>.bbgtit>div img {
+    width: 100%;
+    display: none;
+    position: relative;
+}
+
+div#pcWallpaper>.bbgtit>.img1 a {
+    display: block;
+    position: absolute;
+    top: 30vw;
+    left: 5.2vw;
+    width: 12vw;
+    height: 2vw;
+    background-color: transparent;
+}
+
+
+div#pcWallpaper>.page7 {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    position: relative;
+    z-index: 100;
+}
+
+div#pcWallpaper>.page7>.tit {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+
+}
+
+div#pcWallpaper>.page7>.tit text {
+    font-family: 'Caveat', cursive;
+    color: #fff;
+    font-size: 7vw;
+    animation: stroke2 2.5s linear;
+    animation-fill-mode: forwards;
+    fill: transparent;
+    stroke-dashoffset: 750;
+    stroke-dasharray: 750;
+    stroke: #fff;
+    display: none;
+}
+
+div#pcWallpaper>.page7>.txt {
+    font-size: .65vw;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    bottom: 25%;
+    transform: translateX(-50%);
+}
+
+div#pcWallpaper>.page7>.txt h2 {
+    font-weight: normal;
+    line-height: 1.5vw;
+}
+
+@keyframes stroke2 {
+    0% {
+        stroke-dashoffset: 750;
+    }
+
+    70% {
+        fill: #fff;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+        fill: #fff;
+    }
+}
+
+div#pcWallpaper>.page7>.mail {
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    bottom: 15%;
+    transform: translateX(-50%);
+    font-size: 1vw;
+    text-align: center;
+}
+
+.cursor {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    z-index: 500;
+    /*   transform: translate(-50%, -50%); */
+    pointer-events: none;
+    mix-blend-mode: difference;
+    /*  display: none; */
+}

@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+img {
+    vertical-align: top;
+}
+
+a {
+    color: inherit;
+}
+
+.clear::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+@font-face {
+    font-family: "hygothic-extra";
+    src: url("https://candyfonts.com/wp-data/2020/03/08/94215/hygothic-extra.ttf") format("woff"),
+        url("https://candyfonts.com/wp-data/2020/03/08/94215/hygothic-extra.ttf") format("opentype"),
+        url("https://candyfonts.com/wp-data/2020/03/08/94215/hygothic-extra.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Nanum Gothic';
+    font-style: normal;
+    font-weight: 700;
+    src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Bold.eot);
+    src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Bold.eot?#iefix) format('embedded-opentype'),
+         url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Bold.woff2) format('woff2'),
+         url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Bold.woff) format('woff'),
+         url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Bold.ttf) format('truetype');
+  }
+  
+  
+  
+body {
+    font-family: "hygothic-extra";
+    
+}
